@@ -1,0 +1,18 @@
+.name-title-header {
+    font-size: 6vw;
+}
+
+.page-navigation-links {
+    margin-top: calc(43vh - 3.3vw);
+    text-align: center;
+}
+
+.page-navigation-link {
+    font-size: 1vw;
+    display: block;
+    width: fit-content;
+    padding: 0.1vw;
+    margin: auto;
+    cursor: pointer;
+    margin-bottom: 1vh;
+}
