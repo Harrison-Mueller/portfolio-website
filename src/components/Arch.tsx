@@ -7,7 +7,7 @@ import * as THREE from 'three';
 
 function Arch({scale = [1, 1, 1], position = [0, 0, 0], rotation=[Math.PI / 2, 0, 0]}) {
     const ref = useRef(null);
-    const gltf = useLoader(GLTFLoader, "/models/Arch.glb");
+    const gltf = useLoader(GLTFLoader, "/models/ArchV2.glb");
 
     const normalTexture = useLoader(TextureLoader, '/normals/rock_tile_floor.png');
     const textureTiles = 25;

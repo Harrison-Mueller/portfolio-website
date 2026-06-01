@@ -12,7 +12,7 @@ type SmokeProps = {
 };
 
 function Smoke({size = [80, 80], position = [0, 0, 0], rotation=[0, 0, 0], opacity = 1}: SmokeProps) {
-    const texture = useLoader(TextureLoader, '/textures/Smoke.png');
+    const texture = useLoader(TextureLoader, '/textures/SmokeV2.png');
 
 
     return(
