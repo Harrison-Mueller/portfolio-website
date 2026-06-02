@@ -4,6 +4,7 @@ import { Canvas } from "@react-three/fiber";
 import HomePage from "./components/HomePage.tsx"
 import AboutPage from "./components/AboutPage.tsx"
 import ProjectsPage from "./components/ProjectsPage.tsx"
+import ContactPage from "./components/ContactPage.tsx"
 import Provider from "./components/Provider.tsx"
 import './css/App.css'
 
@@ -20,6 +21,7 @@ function App() {
       <HomePage />
       <AboutPage />
       <ProjectsPage />
+      <ContactPage />
     </Provider>
   )
 }

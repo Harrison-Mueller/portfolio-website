@@ -20,6 +20,7 @@ function Scene() {
         timeRef.current = state.clock.elapsedTime * 2;
         setTime(timeRef.current);
         setScroll(window.scrollY / 200);
+        
     });
 
 
