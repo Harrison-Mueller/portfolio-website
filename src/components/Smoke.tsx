@@ -1,6 +1,6 @@
-import React, { useRef, useState } from "react";
-import { useLoader, useFrame } from "@react-three/fiber";
-import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+// import React, { useRef, useState } from "react";
+import { useLoader } from "@react-three/fiber";
+// import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { TextureLoader } from 'three'
 import * as THREE from 'three';
 

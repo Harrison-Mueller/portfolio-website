@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+// import { useEffect } from "react";
 import { context } from './Provider';
 import "../css/HomePage.css";
 

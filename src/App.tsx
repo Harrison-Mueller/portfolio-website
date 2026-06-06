@@ -1,4 +1,4 @@
-import { useState } from 'react'
+// import { useState } from 'react'
 import Scene from "./components/Scene.tsx"
 import { Canvas } from "@react-three/fiber";
 import HomePage from "./components/HomePage.tsx"

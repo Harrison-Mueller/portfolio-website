@@ -1,8 +1,8 @@
-import { Canvas, useLoader, useFrame } from "@react-three/fiber";
+import { useFrame } from "@react-three/fiber";
 // import { useTexture, useScroll, ScrollControls } from '@react-three/drei';
 // import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
-import { useRef, useMemo, useState  } from "react";
-import * as THREE from 'three';
+import { useRef, useState  } from "react";
+// import * as THREE from 'three';
 import Arch from "./Arch"
 import Smoke from "./Smoke"
 

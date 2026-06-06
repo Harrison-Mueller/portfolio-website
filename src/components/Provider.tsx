@@ -1,4 +1,4 @@
-import { createContext, useState, useContext, useEffect, type ReactNode, useRef } from "react";
+import { createContext, useContext, useEffect, type ReactNode, useRef } from "react";
 
 interface ProviderProps {
     scrollToSection: (section:number) => void;
