@@ -73,11 +73,16 @@ section {
   margin: auto;
   min-height: 100vh;
   height: fit-content;
-  margin-bottom: 52vh;
+  margin-bottom: 100vh;
   margin-top: 0;
   padding: 0;
-  padding-top: 1vh;
+  padding-top: 0.01vh;
+  padding-bottom: 0.01vh;
   /* background-color: rgba(255, 0, 0, 0.314); */
+}
+
+section > :last-child {
+  padding-bottom: 20vh;
 }
 
 p {
