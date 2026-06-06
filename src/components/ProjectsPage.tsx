@@ -12,17 +12,20 @@ function ProjectsPage() {
                 <ProjectCard
                     title="Recipe Website"
                     stack={["React", "Typescript", "html", "css"]}
-                    imageUrl="/textures/Test.png"
+                    imageUrl="/thumbnails/recipe.png"
+                    projectUrl="https://harrison-mueller.github.io/recipe-website/"
                 />
                 <ProjectCard
                     title="WGU Certification Work"
                     stack={["html", "css", "javascript", "typescript", "java", "sql"]}
                     imageUrl="/textures/Test.png"
+                    projectUrl="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
                 />
                 <ProjectCard
                     title="This Portfolio"
                     stack={["React", "React 3 Fiber", "Typescript", "html", "css"]}
-                    imageUrl="/textures/Test.png"
+                    imageUrl="/thumbnails/portfolio.png"
+                    projectUrl="#"
                 />
                 
             </div>
