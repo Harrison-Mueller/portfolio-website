@@ -3,13 +3,16 @@ import { useLoader } from "@react-three/fiber";
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { TextureLoader } from 'three'
 import * as THREE from 'three';
+import wallTextureAsset from "/textures/Wall.png"
+import rockNormalTexture from "/normals/rock_tile_floor.png";
+import archModel from "/models/ArchV2.glb?url";
 
 
 function Arch({scale = [1, 1, 1], position = [0, 0, 0], rotation=[Math.PI / 2, 0, 0]}) {
     const ref = useRef(null);
-    const gltf = useLoader(GLTFLoader, "/models/ArchV2.glb");
+    const gltf = useLoader(GLTFLoader, archModel);
 
-    const normalTexture = useLoader(TextureLoader, '/normals/rock_tile_floor.png');
+    const normalTexture = useLoader(TextureLoader, rockNormalTexture);
     const textureTiles = 25;
     // const normalTexture = useLoader(TextureLoader, '/normals/stone_wall.png');
     // const textureTiles = 15;
@@ -17,7 +20,7 @@ function Arch({scale = [1, 1, 1], position = [0, 0, 0], rotation=[Math.PI / 2, 0
     // const textureTiles = 10;
 
     
-    const wallTexture = useLoader(TextureLoader, '/textures/Wall.png');
+    const wallTexture = useLoader(TextureLoader, wallTextureAsset);
     const wallTiles = 5;
 
     const archMesh = gltf.nodes.Plane as THREE.Mesh;

@@ -1,4 +1,7 @@
 import "../css/ContactPage.css";
+import email from "/icons/square-envelope-solid-full.svg";
+import linkedin from "/icons/square-linkedin-brands-solid-full.svg";
+import github from "/icons/square-github-brands-solid-full.svg";
 
 
 function ContactPage() {
@@ -9,13 +12,13 @@ function ContactPage() {
 
             <p className="contact-links">
                 <h5 className="contact-headers">Email:</h5>
-                <a href="mailto:MuellerWH@protonmail.com"><img src="/icons/square-envelope-solid-full.svg" />MuellerWH@protonmail.com</a>
+                <a href="mailto:MuellerWH@protonmail.com"><img src={email} />MuellerWH@protonmail.com</a>
             
                 <h5 className="contact-headers">LinkedIn:</h5>
-                <a href="https://www.linkedin.com/in/harrison-mueller-35a4053b9/" target="_blank"><img src="/icons/square-linkedin-brands-solid-full.svg" />LinkedIn.com/in/Harrison-Mueller-35a4053b9</a>
+                <a href="https://www.linkedin.com/in/harrison-mueller-35a4053b9/" target="_blank"><img src={linkedin} />LinkedIn.com/in/Harrison-Mueller-35a4053b9</a>
             
                 <h5 className="contact-headers">GitHub:</h5>
-                <a href="https://github.com/Harrison-Mueller" target="_blank"><img src="/icons/square-github-brands-solid-full.svg" />GitHub.com/Harrison-Mueller</a>
+                <a href="https://github.com/Harrison-Mueller" target="_blank"><img src={github} />GitHub.com/Harrison-Mueller</a>
             </p>
         
         </section>
