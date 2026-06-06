@@ -41,7 +41,7 @@ function Scene() {
                 <Smoke 
                     position={[Math.sin(1000 * index) * 1, 0, 15 - archSpace * archCount + (index * archSpace + scroll + time)%(archSpace * archCount)]} 
                     rotation={[0, 0, index]}
-                    opacity={0.5 * Math.min(6, 6 - (21 - archSpace * archCount + (index * archSpace + time)%(archSpace * archCount))) / 6}
+                    opacity={0.5 * Math.min(6, 6 - (21 - archSpace * archCount + (index * archSpace + scroll + time)%(archSpace * archCount))) / 6}
                 />
             ))}
 

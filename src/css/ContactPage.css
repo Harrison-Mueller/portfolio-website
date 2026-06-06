@@ -1,0 +1,36 @@
+.contact-links a {
+    display: block;
+    width: fit-content;
+    color: #9AA8AF;
+    margin: 0;
+    margin-bottom: 9vh;
+    margin-left: 2vw;
+    height: fit-content;
+    text-underline-offset: 0.14em;
+}
+
+.contact-links a:visited {
+    color: #B193B4;
+}
+
+.contact-links a img {
+    height: 1.5em;
+    vertical-align: middle;
+    color: blue;
+    position: relative;
+    user-select: none;
+}
+
+.contact-links a:hover img {
+    transform: rotate(-5deg);
+}
+
+.contact-links a:hover {
+    text-underline-offset: 0.1em;
+}
+
+.contact-headers {
+    user-select: text;
+    cursor:text;
+    width: fit-content;
+}

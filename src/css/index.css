@@ -1,11 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
 html {
+  --text-size: 1.2rem;
+  --header-size: min(calc(var(--text-size) * 4), 6vw);
+
+  /* --text-size: min(max(1vw, 1vh), 3vh);
+  --header-size: max(calc(var(--text-size) * 4), 3vh); */
+/*   
+  --header-size: min(6vw, 6vh);
+  --text-size: min(max(1vw, 1vh), 3vh); */
+  
+  /* --header-size: min(max(6vw, 6vh), 5vw); */
+  --section-width: min(max(30vw, 30vh), 90vw);
   margin: 0;
   padding: 0;
   background-color: black;
   color: #ab9376;
   font-family: 'IM Fell English SC', serif;
+  /* user-select: none; */
 }
 
 body {
@@ -16,25 +28,64 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Cinzel Decorative", serif;
   color: #f8f1ed;   
+  font-weight: lighter;
+  text-align: center;
+  user-select: none;
+  cursor: default;
 }
 
 h1 {
+  font-size: min(max(6vw, 4rem), 8vw);
   text-align: center;
   font-weight: lighter;
+  margin-bottom: 0;
+  /* text-shadow: 0 0 1vw #000000, 0 0 2vw #000000,0 0 4vw #000000,0 0 0.2vw #f8f1ed; */
 }
 
 h2 {
+  margin-top: 11vh;
   text-align: center;
   font-weight: lighter;
+  font-size: var(--header-size);
+  margin-bottom: 0;
+}
+
+h3 {
+  font-size: max(1vw, 1rem);
+  margin-top: 0;
+}
+
+h4 {
+  font-size: calc(var(--header-size) * 0.25);
+  margin-top: 0;
+  margin-bottom: 8vh;
+}
+
+h5 {
+  color: #ab9376;
+  font-family: 'IM Fell English SC', serif;
+  font-size: calc(var(--text-size) * 1.1);
+  text-align: left;
+  margin: 0;
 }
 
 section {
-  height: 100vh;
+  margin: auto;
+  min-height: 100vh;
+  height: fit-content;
   margin-bottom: 52vh;
   margin-top: 0;
   padding: 0;
   padding-top: 1vh;
   /* background-color: rgba(255, 0, 0, 0.314); */
+}
+
+p {
+  width: var(--section-width);
+  margin: auto;
+  padding: 0;
+  font-size: var(--text-size);
+  /* text-shadow: 0 0 0.1vw #000000, 0 0 0.2vw #000000, 0 0 0.4vw #000000; */
 }
 
 section:last-of-type{

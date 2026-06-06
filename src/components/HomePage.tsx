@@ -9,11 +9,11 @@ function HomePage() {
 
         <section id="home-page-section">
             <h1 className="name-title-header">Harrison Mueller</h1>
-            
+            <h3 className="home-page-subtitle">Fullstack Developer</h3>
             <div className="page-navigation-links">
-                <a className="page-navigation-link" onClick={() => scrollToSection(1)}>About Me</a>
-                <a className="page-navigation-link" onClick={() => scrollToSection(2)}>Projects</a>
-                <a className="page-navigation-link" onClick={() => scrollToSection(3)}>Contact</a>
+                <h5><a className="page-navigation-link" onClick={() => scrollToSection(1)}>About Me</a></h5>
+                <h5><a className="page-navigation-link" onClick={() => scrollToSection(2)}>Projects</a></h5>
+                <h5><a className="page-navigation-link" onClick={() => scrollToSection(3)}>Contact</a></h5>
             </div>
         </section>
     )

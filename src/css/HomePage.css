@@ -1,5 +1,6 @@
 .name-title-header {
-    font-size: 6vw;
+    /* font-size: 6vw; */
+    margin-top: 9vh;
 }
 
 .page-navigation-links {
@@ -8,11 +9,40 @@
 }
 
 .page-navigation-link {
-    font-size: 1vw;
+    /* font-size: 1vw; */
     display: block;
     width: fit-content;
     padding: 0.1vw;
     margin: auto;
     cursor: pointer;
     margin-bottom: 1vh;
+}
+
+.page-navigation-link:hover {
+    /* text-shadow: 0 0.5em 1em #ab9376, 0 0.2em 0.4em #ab9376, 0 0.0em 0.2em #ab9376; */
+    /* text-shadow: 1em 0 0 #ab93765c, -1em 0 0 #ab93765c; */
+    /* background-image: radial-gradient(closest-side, rgba(255, 255, 255, 0.134), #ffffff00); */
+    letter-spacing: 0.02em;
+}
+
+@keyframes nav-hover {
+    0% {
+        letter-spacing: 0.02em;
+
+        /* text-shadow: 0em 0 0 #ab9376, 0em 0 0 #ab9376; */
+    }
+    50% {
+        /* text-shadow: 2em 0 0 #ab93765c, -2em 0 0 #ab93765c; */
+    }
+    100% {
+        letter-spacing: 1em;
+
+        /* text-shadow: 3em 0 0 #ab937600, -3em 0 0 #ab937600; */
+    }
+}
+
+.page-navigation-link:active {
+    /* background-image: radial-gradient(closest-side, rgba(255, 255, 255, 0.134), #ffffff00); */
+    /* text-shadow: 1em 0 0 #ab93765c, -1em 0 0 #ab93765c; */
+    animation: nav-hover 0.3s ease-out forwards;
 }

@@ -1,0 +1,45 @@
+.project-card {
+    
+
+    background: linear-gradient(to right, black, transparent);
+    /* width: 25vw; */
+    width: max(25vw, 40rem);
+    height:fit-content;
+    /* margin-left: 30vw; */
+    margin: auto;
+    margin-bottom: 2vh;
+    border-radius: 1vh;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.1s ease-out;
+
+}
+
+.project-card:hover {
+    /* padding-left: 1vw; */
+    transform: translateX(0.5vw);
+    transition: transform 0.05s ease-in;
+}
+
+.project-card-image {
+    float: left;
+    /* width: 50%; */
+    height: 9.6rem;
+    margin: 0.5vw;
+    border-radius: 0.5vh;
+    border: 2px solid #ab9376;
+    user-select: none;
+}
+
+
+.project-card-title {
+    float: none;
+    clear: both;
+    margin-left: 0.5vw;
+    /* font-size: 2vh; */
+    user-select: text;
+}
+
+.project-card-text {
+    padding-top: 0.5vw;
+}

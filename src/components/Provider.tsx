@@ -65,13 +65,13 @@ function Provider({children} : Prov) {
             return;
         }
         if(window.scrollY > lastScroll.current) {
-            if(currentSectionElement.getBoundingClientRect().bottom <= window.innerHeight * 0.8) {
+            if(currentSectionElement.getBoundingClientRect().bottom <= window.innerHeight * 0.9) {
                 scrollToSection(currentSection.current + 1);
                 e.preventDefault();
             }
         }
         if(window.scrollY < lastScroll.current) {
-            if (currentSectionElement.getBoundingClientRect().top >= window.innerHeight * 0.2) {
+            if (currentSectionElement.getBoundingClientRect().top >= window.innerHeight * 0.1) {
                 scrollToSection(currentSection.current - 1);
                 e.preventDefault();
             }
