@@ -6,7 +6,7 @@ function AboutPage() {
         <section id="about-page-section">
             <h2 className="about-header">About Me</h2>
             <h4 className="about-subtitle">Who I Am</h4>
-            <p className="about-text">My name is Harrison Mueller. </p>
+            <p className="about-intro">My name is Harrison Mueller. </p>
             <br />
             <p className="about-text">
                 When I was a child, I discovered my love for programming through lego robotics. Six years ago I taught myself Object Oriented Programming for use in competitive robotics and game making.
@@ -17,6 +17,15 @@ function AboutPage() {
             </p>
             <br />
             <p className="about-text">My mission is to design applications that effectively accomplish their intended purpose for their users.</p>
+            <br />
+            <br />
+            <p><h5>Education:</h5></p>
+            <p><hr /></p>
+            <p className="education-text">Western Governors University <br /><i>Fullstack Engineering Certificate</i></p>
+            <br />
+            <p className="education-text">Amazon Web Services Training and Certification <br /><i>AWS Certified Cloud Practitioner Certificate</i></p>
+            <br />
+            <p className="education-text">Linux Professional Institute <br /><i>Linux Essentials Certificate</i></p>
         </section>
     )
 }

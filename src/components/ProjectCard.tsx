@@ -12,14 +12,17 @@ function ProjectCard({ title, stack, imageUrl, projectUrl }: ProjectCardProps) {
     
     return(
         <div className="project-card"  onClick={() => projectUrl == "#" ? scrollToSection(0) : window.open(projectUrl,  '_blank')}>
-            <img className="project-card-image" src={imageUrl} alt="Project Preview Image" />
-            <p className="project-card-text">
-                {/* Stack: <br /> */}
-                {stack.map((item, index) => (
-                    <span key={index}>-{item} <br /></span>
-                ))}
-            </p>
-            <h5 className="project-card-title">{title}</h5>
+            <h5 className="project-card-title top">{title}</h5>
+            <div className="project-card-flex-container">
+                <img className="project-card-image" src={imageUrl} alt="Project Preview Image" />
+                <p className="project-card-text">
+                    {/* Stack: <br /> */}
+                    {stack.map((item, index) => (
+                        <span key={index}>-{item} <br /></span>
+                    ))}
+                </p>
+                {/* <h5 className="project-card-title bottom">{title}</h5> */}
+            </div>
         </div>
     )
 }

@@ -1,18 +1,31 @@
 .project-card {
-    
+    --card-width: min(max(25vw, 40rem), 85vw);
 
     background: linear-gradient(to right, black, transparent);
     /* width: 25vw; */
-    width: max(25vw, 40rem);
+    width: var(--card-width);
     height:fit-content;
     /* margin-left: 30vw; */
     margin: auto;
-    margin-bottom: 2vh;
-    border-radius: 1vh;
+    margin-bottom: max(2vh, 4rem);
+    border-radius: calc(var(--card-width) * 0.01);
     cursor: pointer;
     position: relative;
     transition: transform 0.1s ease-out;
+    /* border: 0.1px solid rgba(255, 255, 255, 0.186); */
+    border: 1px solid transparent;
+    border-image: linear-gradient(to right,#f8f1ed00 1%, #f8f1ed40 10%, #f8f1ed00 97%);
+    border-image-slice: 1;
+    border-right: none;
+    border-left: none;
+    padding: 0.5rem;
+}
 
+.project-card-flex-container {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .project-card:hover {
@@ -24,8 +37,9 @@
 .project-card-image {
     float: left;
     /* width: 50%; */
-    height: 9.6rem;
-    margin: 0.5vw;
+    height: min(9.6rem, 45vw);
+    /* margin: 0.5rem; */
+    margin-top: 0;
     border-radius: 0.5vh;
     border: 2px solid #ab9376;
     user-select: none;
@@ -38,8 +52,13 @@
     margin-left: 0.5vw;
     /* font-size: 2vh; */
     user-select: text;
+    margin-bottom: 0;
+    /* padding-top: 0.5rem; */
 }
 
 .project-card-text {
-    padding-top: 0.5vw;
+    padding-top: 0;
+    width: fit-content;
+    margin: 0;
+    /* flex: none; */
 }
