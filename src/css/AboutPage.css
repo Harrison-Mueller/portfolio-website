@@ -2,3 +2,17 @@
     /* text-align: center; */
     text-indent: 2em;
 }
+
+
+.about-link {
+    color: #9AA8AF;
+    text-underline-offset: 0.14em;
+}
+
+.about-link:hover {
+    text-underline-offset: 0.1em;
+}
+
+.about-link:visited {
+    color: #B193B4;
+}

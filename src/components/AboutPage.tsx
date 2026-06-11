@@ -20,6 +20,7 @@ function AboutPage() {
             <br />
             <br />
             <p><h5>Education:</h5></p>
+            {/* <p><a className="about-link" href="https://www.credly.com/users/harrison-mueller" target="_blank">Credly.com/users/harrison-mueller</a></p> */}
             <p><hr /></p>
             <p className="education-text">Western Governors University <br /><i>Fullstack Engineering Certificate</i></p>
             <br />
