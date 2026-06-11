@@ -1,6 +1,6 @@
 import ProjectCard from "./ProjectCard";
 import recipe from "/thumbnails/recipe.png"
-import test from "/textures/Test.png"
+// import test from "/textures/Test.png"
 import certifications from "/thumbnails/cerifications2.png"
 import portfolio from "/thumbnails/portfolio.png"
 import certificationWork from "/CertificationWork.pdf"
