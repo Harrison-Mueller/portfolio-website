@@ -1,7 +1,9 @@
 import ProjectCard from "./ProjectCard";
 import recipe from "/thumbnails/recipe.png"
 import test from "/textures/Test.png"
+import certifications from "/thumbnails/cerifications2.png"
 import portfolio from "/thumbnails/portfolio.png"
+import certificationWork from "/CertificationWork.pdf"
 
 
 function ProjectsPage() {
@@ -14,15 +16,15 @@ function ProjectsPage() {
             <div className="project-cards">
                 <ProjectCard
                     title="Recipe Website"
-                    stack={["React", "Typescript", "html", "css"]}
+                    stack={["React", "typescript", "html", "css"]}
                     imageUrl={recipe}
                     projectUrl="https://harrison-mueller.github.io/recipe-website/"
                 />
                 <ProjectCard
-                    title="WGU Certification Work"
-                    stack={["html", "css", "javascript", "typescript", "java", "sql"]}
-                    imageUrl={test}
-                    projectUrl="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                    title="Certification Projects"
+                    stack={["html", "css", "javascript", "java"]}
+                    imageUrl={certifications}
+                    projectUrl={certificationWork}
                 />
                 <ProjectCard
                     title="This Portfolio"
